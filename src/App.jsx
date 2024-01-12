@@ -12,7 +12,7 @@ function App() {
         <CategoryContainer />
         <hr className="mx-20 mt-32 mb-3" />
         <h1 className="text-xl ml-10 mb-3">Recommendation</h1>
-        <div className="flex flex-row gap-10 mx-10 flex-wrap">
+        <div className="flex flex-row gap-10 justify-center flex-wrap">
           <CardProduct />
           <CardProduct />
           <CardProduct />
