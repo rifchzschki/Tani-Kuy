@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ImageUploadView
+from .views import ProdukDisplayView
 
 urlpatterns = [
-    path('api/upload_image/', ImageUploadView.as_view(), name='image-upload')
+    path('api/produk-display/', ProdukDisplayView.as_view(), name='produk-display')
 ]

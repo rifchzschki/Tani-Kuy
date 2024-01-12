@@ -1,24 +1,19 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.parsers import MultiPartParser, FormParser
-from .serializers import ImageSerializer
-from .models import Image
+from .serializers import ProdukSerializer
+from .models import Produk
 
-# Create your views here.
-class ImageUploadView(APIView):
-    parser_classes = (MultiPartParser, FormParser)
+
+class ProdukDisplayView(APIView):
 
     def post(self, request):
-        serializer = ImageSerializer(data=request.data)
-        Images = Image.objects.all()
-        if Images.exists():
-            Images[0].delete()
-        if serializer.is_valid():
+        serializer = ProdukSerializer(data=request.data)
+        if serializer.is_valid(): 
             serializer.save()
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
     
     def get(self, request):
-        Images = Image.objects.all()
-        serializer = ImageSerializer(Images, many=True)
+        Products = Produk.objects.all()
+        serializer = ProdukSerializer(Products, many=True, context={'request': request})
         return Response(serializer.data)
