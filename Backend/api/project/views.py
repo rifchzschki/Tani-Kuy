@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser
 from .serializers import ImageSerializer
 from .models import Image
-import cv2, os, shutil, time
 
 # Create your views here.
 class ImageUploadView(APIView):

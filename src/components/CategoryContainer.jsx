@@ -6,7 +6,7 @@ import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
 export default function CategoryContainer() {
   return (
     <div className="flex relative items-center top-28 rounded-xl mx-10 h-[200px] bg-lime-200">
-      <IconContext.Provider value={{ color: "blue" }}>
+      <IconContext.Provider value={{ color: "grey" }}>
         <button>
           <FiArrowLeftCircle className="fixed -ml-3" size={25} />
         </button>
@@ -33,6 +33,11 @@ export default function CategoryContainer() {
         <li className="">
           <CardCategory />
         </li>
+        <IconContext.Provider value={{ color: "grey" }}>
+          <button>
+            <FiArrowRightCircle className="fixed -ml-3" size={25} />
+          </button>
+        </IconContext.Provider>
       </ul>
     </div>
   );

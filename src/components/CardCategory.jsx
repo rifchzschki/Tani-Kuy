@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export default function CardCategory() {
   return (
-    <Link to="/" className="flex flex-col ">
+    <Link to="/" className="flex flex-col rounded-full hover:shadow-md">
       <img
         src="assets/placeholderimg.jpg"
         alt=""
-        className="rounded-full h-40 w-40 -mt-1"
+        className="rounded-full h-40 w-40 -mt-1 "
       />
-      <p className="mx-auto -mt-6  px-8 rounded-md text-slate-50 bg-lime-400 shadow-sm shadow-slate-600">
+      <p className="mx-auto -mt-6  px-8 rounded-md text-slate-50 bg-lime-400 shadow-sm shadow-slate-600 hover:scale-105">
         Kategori
       </p>
     </Link>
