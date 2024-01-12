@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hover-effect:hover {
+  background-color: rgb(
+    132 204 22
+  ); /* Ganti warna latar belakang sesuai keinginan Anda */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hover-target:hover {
+  /* Gaya tambahan yang ingin Anda terapkan pada elemen saat dihover */
+  /* Contoh: Mengubah warna teks */
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
