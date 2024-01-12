@@ -1,8 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import CardProduct from "./components/CardProduct";
 import CategoryContainer from "./components/CategoryContainer";
+import ProductContainer from "./components/ProductContainer";
 
 function App() {
   return (
@@ -12,20 +12,7 @@ function App() {
         <CategoryContainer />
         <hr className="mx-20 mt-32 mb-3" />
         <h1 className="text-xl ml-10 mb-3">Recommendation</h1>
-        <div className="flex flex-row gap-10 justify-center flex-wrap">
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-        </div>
+        <ProductContainer />
       </div>
       {/* <div> */}
       {/* </div> */}

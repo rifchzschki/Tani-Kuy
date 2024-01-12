@@ -2,6 +2,10 @@
 
 Sebuah aplikasi yang diharapkan dapat membantu proses bertani
 
+# Screenshoot salah satu fitur
+
+![Alt Text](./sreenshoot1.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
