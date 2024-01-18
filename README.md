@@ -4,6 +4,7 @@ Sebuah aplikasi yang diharapkan dapat membantu proses bertani
 
 # Screenshoot salah satu fitur
 
+## https://www.figma.com/proto/YYh1SraH2m8bALrrBSgteh/Tani-Kuy?node-id=82-6122&mode=design&t=HzX4AySt3Dzrk5lm-1
 ![Alt Text](./sreenshoot1.png)
 
 ## Available Scripts
